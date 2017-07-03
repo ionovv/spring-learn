@@ -11,7 +11,7 @@ public class InjectSimple {
 
     public static void main(String[] args) {
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:config/app-context-xml_injectSimple.xml");
+        ctx.load("classpath:config/app-context-xml_injectSimple.ch3.xml");
         ctx.refresh();
         InjectSimple simple = (InjectSimple) ctx.getBean("injectSimple");
         System.out.println(simple);

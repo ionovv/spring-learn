@@ -20,7 +20,7 @@ public class InjectSimpleAnnotation {
 
     public static void main(String[] args) {
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:config/app-context-xml_injectSimple-annotation.xml");
+        ctx.load("classpath:config/app-context-xml_injectSimple-annotation.ch3.xml");
         ctx.refresh();
         InjectSimpleAnnotation simple = (InjectSimpleAnnotation) ctx.getBean("injectSimpleAnnotation");
         System.out.println(simple);

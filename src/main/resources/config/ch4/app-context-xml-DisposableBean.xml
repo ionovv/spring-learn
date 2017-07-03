@@ -5,10 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                             http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="injectSimpleConfigAnn"
-          class="ch3.InjectSimple.InjectSimpleConfigAnn"/>
-
-    <bean id="injectSimpleSpel"
-          class="ch3.InjectSimple.InjectSimpleSpel"/>
+    <bean id="destructiveBean"
+          class="ch4.DestructiveBeanWithinterface"
+          p:filePath="#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"
+    />
 
 </beans>

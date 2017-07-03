@@ -58,7 +58,7 @@ public class InjectSimpleSpel1 {
 
     public static void main(String[] args) {
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:config/app-context-xml_injectSimple-config.xml");
+        ctx.load("classpath:config/app-context-xml_injectSimple-config.ch3.xml");
         ctx.refresh();
         InjectSimpleSpel1 simple = (InjectSimpleSpel1) ctx.getBean("injectSimpleSpel");
         System.out.println(simple);
